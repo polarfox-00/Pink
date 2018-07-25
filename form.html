@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pink</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <img class="page-header__logo" src="http://placehold.it/75x22" width="75" height="22" alt="Pink логотип">
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="#" class="site-list__link">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#" class="site-list__link">Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#" class="site-list__link">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#" class="site-list__link">HTML Academy</a>
+        </li>
+      </ul>
+      <button class="main-nav__button"></button>
+    </nav>
+  </header>
+
+  <main class="form-main">
+    <div class="form-main__title__wrapper">
+      <h1 class="form-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
+    <p class="form-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+    </p>
+
+    <form action="http://echo.htmlacademy.ru" class="form-main__form form">
+      <fieldset class="form__name group-name">
+        <p>
+          <label class="group-name__label">Фамилия
+            <input type="text" placeholder="Укажите фамилию *" name="last-name">
+          </label>
+        </p>
+        <p>
+          <label class="group-name__label">Имя
+            <input type="text" placeholder="Введите ваше имя *" name="name">
+          </label>
+        </p>
+        <p>
+          <label class="group-name__label">Имя
+            <input type="text" placeholder="Ну и отчество тоже" name="middle-name">
+          </label>
+        </p>
+      </fieldset>
+      <fieldset class="form__app group-app">
+        <legend class="group-app__title">С каким приложением путешествовали?</legend>
+        <ul class="group-app__list">
+          <li class="group-app__item">
+            <input type="radio" name="app" id="ios">
+            <label for="ios" class="group-app__label">Pink для iOS</label>
+          </li>
+          <li class="group-app__item">
+            <input type="radio" name="app" id="android">
+            <label for="android" class="group-app__label">Pink на Android</label>
+          </li>
+          <li class="group-app__item">
+            <input type="radio" name="app" id="win-phone">
+            <label for="win-phone" class="group-app__label">Pink на Android</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__contacts group-contacts">
+        <legend class="group-contacts__title">Контактная информация</legend>
+        <p>
+          <input type="text" placeholder="Номер, пожалуйста" name="phone" id="phone">
+          <label for="phone" class="group-contacts__label">Номер телефона</label>
+        </p>
+        <p>
+          <input type="text" placeholder="Введите почту *" name="email" id="email">
+          <label for="email" class="group-contacts__label">Адрес почты</label>
+        </p>
+      </fieldset>
+      <fieldset class="form__achievements group-achievements">
+        <legend class="group-achievements__title">Ваши безбашенные достижения в путешествии</legend>
+        <ul class="group-achievements__list">
+          <li class="group-achievements__item">
+            <input type="checkbox" name="selfi-shark" id="selfi-shark" checked="">
+            <label for="selfi-shark" class="group-achievements__label">Сделал селфи с акулой</label>
+          </li>
+          <li class="group-achievements__item">
+            <input type="checkbox" name="chack-norris" id="chack-norris">
+            <label for="chack-norris" class="group-achievements__label">Видел Чака Норриса</label>
+          </li>
+          <li class="group-achievements__item">
+            <input type="checkbox" name="tower" id="tower" checked="">
+            <label for="tower" class="group-achievements__label">Удержал башню</label>
+          </li>
+          <li class="group-achievements__item">
+            <input type="checkbox" name="burn" id="burn" checked="">
+            <label for="burn" class="group-achievements__label">Обгорел на пляже</label>
+          </li>
+          <li class="group-achievements__item">
+            <input type="checkbox" name="souvenir" id="souvenir">
+            <label for="souvenir" class="group-achievements__label">Накупил сувениров</label>
+          </li>
+          <li class="group-achievements__item">
+            <input type="checkbox" name="hotel" id="hotel">
+            <label for="hotel" class="group-achievements__label">Разгромил отель</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__emotion group-emotion">
+        <legend class="group-achievements__title">Опишите свои эмоции</legend>
+        <textarea name="text" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </fieldset>
+      <button class="form-button button" type="submit">Отправить форму</button>
+      <p class="form__annotation">* — обязательные <span>для заполнения</span> поля</p>
+    </form>
+  </main>
+  <footer class="main-footer">
+    <img class="main-footer__logo" src="http://placehold.it/147x40" alt="Логотип Pink">
+    <ul class="main-footer__list social">
+      <li class="social__item">
+        <a class="social__link--vkontakte" href="#">
+          <span class="visually-hidden">Вконтакe</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link--facebook" href="#">
+          <span class="visually-hidden">Вконтакe</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link--youtube" href="#">
+          <span class="visually-hidden">Вконтакe</span>
+        </a>
+      </li>
+    </ul>
+    <div class="main-footer__develop develop">
+      <span class="develop__text">
+        Разработано
+        <img class="develop__logo" src="http://placehold.it/147x40" alt="HTMLacademy логотип">
+      </span>
+    </div>
+  </footer>
+</body>
+
+</html>
