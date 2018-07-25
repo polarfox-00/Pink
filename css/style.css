@@ -242,4 +242,7 @@ table {
 
 .page-header {
   min-height: 465px;
-  background: url("../img/iphone5hand.png") right bottom no-repeat; }
+  background-image: url("../img/iphone5hand.png"), url("../img/backgroundtablet.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 30% bottom, 45% 0;
+  background-color: #000000; }
