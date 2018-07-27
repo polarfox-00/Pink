@@ -1,9 +1,104 @@
-.page-header {
-  min-height: 465px;
+.page-header__wrapper {
+  min-height: 460px;
 
-  background-image: url("../img/iphone5hand.png"),
-               url("../img/backgroundtablet.jpg");
+  background-image: url("../img/intro/iphone-hand-mobile.png"),
+               url("../img/bg/bg-back-mobile.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 30% bottom, 45% 0;
   background-color: #000000;
+}
+
+.page-header__logo {
+  fill: #ffffff;
+  &:hover {
+    fill: $hover-color;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__stroke {
+  width: 100%;
+
+  padding: 21px;
+  background-color: rgba(#000000, 0.3);
+}
+
+.page-header__wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.page-header__button {
+  position: absolute;
+  right: 20px;
+  top: 21px;
+  padding: 0;
+  border: none;
+  background: none;
+  fill: #ffffff;
+
+  cursor: pointer;
+    &:hover {
+      fill: $hover-color;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+}
+.page-header__wrapper--opened  .page-header__button {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 22px;
+    height: 4px;
+    right: 0;
+    top:10px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+  &:hover::after,
+  &:hover::before,
+   {
+    background-color: $hover-color;
+  }
+  &:active::after,
+  &:active::before,
+   {
+    background-color: $hover-color;
+    opacity: 0.9;
+  }
+}
+
+.page-header__wrapper--opened {
+  .page-header__stroke {
+    background-color: $main-bg;
+  }
+  & .page-header__button--image {
+    display: none;
+  }
+}
+.page-header__wrapper--closed {
+  & .page-header__button--image {
+    display: block;
+  }
+  & .main-nav__list {
+    display: none;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1200px) {
+
 }

@@ -8,6 +8,7 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
+var svgmin = require("gulp-svgmin");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var minify = require("gulp-csso");
@@ -52,7 +53,13 @@ gulp.task("watch", function() {
 });
 
 gulp.task("sprite", function() {
-  return gulp.src("source/img/inSprite-icons/**/*.svg")
+  return gulp.src("source/img/svg-sprite/*.svg")
+  // minify svg
+		.pipe(svgmin({
+			js2svg: {
+				pretty: true
+			}
+		}))
     .pipe(svgstore({
       inlineSvg: true
     }))
