@@ -53,7 +53,7 @@ gulp.task("watch", function() {
 });
 
 gulp.task("sprite", function() {
-  return gulp.src("source/img/svg-sprite/*.svg")
+  return gulp.src("source/img/svg/icon-*.svg")
   // minify svg
 		.pipe(svgmin({
 			js2svg: {

@@ -1,6 +1,8 @@
 .download {
   background-color: $second-bg;
-  padding: 28px 20px;
+  width: 280px;
+  margin: 0 auto;
+    padding-bottom: 33px;
 }
 .download__button {
   width: 281px;
@@ -20,11 +22,17 @@
 .download__list {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 28px;
   padding: 0 34px;
 
   list-style: none;
+}
+.download__description {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
 }
 @media (max-width: $moibile-width-only) {
   .download__slogan {
