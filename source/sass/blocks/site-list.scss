@@ -24,3 +24,36 @@
         opacity: 0.3;
       }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav .site-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 630px;
+    background-color: none;
+    align-items: center;
+  }
+  .site-list__item {
+    border: none;
+    position: relative;
+  }
+  .site-list__item a[href="#"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    right: 2px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  .site-list__link {
+      padding: 12px 0;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 18px;
+      text-transform:  none;
+  }
+}

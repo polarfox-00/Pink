@@ -1,0 +1,36 @@
+@media (max-width: $moibile-width-only) {
+  .more-info {
+    display: none;
+  }
+}
+@media (min-width: $tablet-width) {
+  .more-info {
+    padding: 60px 10px 0;
+  }
+  .more-info__wrapper {
+    margin: 0 auto;
+    padding-left: 310px;
+    padding-top: 60px;
+    min-height: 380px;
+    background: url("../img/bg/timer.svg") no-repeat;
+
+  }
+  .more-info__title {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .more-info__text {
+    margin-bottom: 20px;
+  }
+  .more-info__link {
+    color: #d22856;
+    text-decoration: underline;
+  }
+}
+@media (min-width: $desktop-width ) {
+  .more-info {
+    background-color: #f2f2f2;
+  }
+}

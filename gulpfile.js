@@ -44,6 +44,7 @@ gulp.task("serve", ["watch"], function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
+  gulp.watch("js/script.js", ["js:update"]);
 });
 
 gulp.task("watch", function() {
